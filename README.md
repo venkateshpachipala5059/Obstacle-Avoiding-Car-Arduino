@@ -1,17 +1,17 @@
 # 🚗 Obstacle Avoiding Car Using Arduino UNO
 
 ## 📖 Overview
-This project is an autonomous obstacle-avoiding robot built using an Arduino UNO, an ultrasonic sensor, a servo motor, and an L293D motor driver. The robot detects obstacles in front of it and automatically changes its direction to avoid collisions.
+This project is an autonomous obstacle-avoiding robot developed using an Arduino UNO, HC-SR04 ultrasonic sensor, SG90 servo motor, and L293D motor driver. The robot detects obstacles and automatically changes its direction to avoid collisions.
 
 ---
 
 ## ✨ Features
-- Autonomous obstacle detection
-- Automatic navigation
+- Automatic obstacle detection
+- Autonomous navigation
 - Arduino UNO based
 - Ultrasonic distance measurement
 - Servo motor scanning
-- L293D motor control
+- Motor driver control
 
 ---
 
@@ -19,28 +19,55 @@ This project is an autonomous obstacle-avoiding robot built using an Arduino UNO
 - Arduino UNO
 - HC-SR04 Ultrasonic Sensor
 - SG90 Servo Motor
-- L293D Motor Driver Shield
-- TT Gear Motors
-- Li-ion Battery
-- Chassis
-- Jumper Wires
+- L293D Motor Driver
+- DC Gear Motors
+- Robot Chassis
+- Battery Pack
 
 ---
 
-## 💻 Software
+## 📂 Project Structure
+
+```text
+Obstacle-Avoiding-Car-Arduino/
+├── Circuit/
+├── Code/
+├── Documentation/
+├── Images/
+└── README.md
+```
+
+---
+
+## 📷 Project Image
+
+![Obstacle Avoiding Car](Images/OBSTACLE%20AVOIDING%20CAR.png)
+
+---
+
+## 🔌 Circuit Diagram
+
+Circuit diagrams are available in the `Circuit` folder.
+
+---
+
+## 💻 Software Used
+
 - Arduino IDE
-- Embedded C / C++
+- C++
 - AFMotor Library
 - Servo Library
 
 ---
 
 ## 🚀 Working Principle
-The ultrasonic sensor continuously measures the distance in front of the robot. If an obstacle is detected, the Arduino stops the motors, scans the left and right directions using a servo motor, chooses the safer path, and continues moving.
+
+The ultrasonic sensor continuously measures the distance in front of the robot. If an obstacle is detected within the predefined distance, the Arduino stops the robot, scans the left and right directions using the servo-mounted sensor, chooses the safer path, and continues moving.
 
 ---
 
 ## 📈 Applications
+
 - Robotics
 - Industrial Automation
 - Smart Vehicles
@@ -48,16 +75,17 @@ The ultrasonic sensor continuously measures the distance in front of the robot. 
 
 ---
 
-## 🔮 Future Improvements
+## 🔮 Future Scope
+
 - Bluetooth Control
-- Wi-Fi Control
 - Voice Control
-- AI Object Detection
+- Wi-Fi Control
 - Mobile App Control
 
 ---
 
 ## 👨‍💻 Author
+
 **P. Venkatesh**
 
 Diploma in Electronics & Communication Engineering
