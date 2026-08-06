@@ -15,12 +15,14 @@
 <header>
 
 <nav>
+
     <h2 class="logo">🤖 ARDUINO LAB</h2>
 
     <div class="nav-links">
         <a href="#about">About</a>
         <a href="#hardware">Hardware</a>
         <a href="#working">Working</a>
+        <a href="#circuit">Circuit</a>
         <a href="#gallery">Gallery</a>
     </div>
 
@@ -28,6 +30,8 @@
 
 </header>
 
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -40,9 +44,9 @@ OBSTACLE<br>
 
 <p>
 An autonomous robotic vehicle built using Arduino UNO,
-Ultrasonic Sensor and Servo Motor for intelligent obstacle detection.
+HC-SR04 Ultrasonic Sensor and Servo Motor for intelligent
+obstacle detection and automatic navigation.
 </p>
-
 
 <div class="buttons">
 
@@ -62,7 +66,7 @@ PROJECT IMAGES
 
 <div class="robot-image">
 
-<img src="assets/Obstacle_Avoiding_Car.png"
+<img src="Images/Obstacle_Avoiding_Car.png"
 alt="Obstacle Avoiding Car">
 
 </div>
@@ -71,59 +75,61 @@ alt="Obstacle Avoiding Car">
 
 
 
+<!-- ABOUT -->
 
 <section id="about">
 
 <h2>ABOUT PROJECT</h2>
 
 <p>
-The Arduino based Obstacle Avoiding Car is an autonomous robot
-that detects obstacles using an ultrasonic sensor and automatically
-changes its direction to avoid collisions.
+
+The Arduino-based Obstacle Avoiding Car is an autonomous robot
+that continuously scans its surroundings using an HC-SR04
+Ultrasonic Sensor mounted on a Servo Motor.
+
+Whenever an obstacle is detected, the Arduino UNO processes
+the measured distance and intelligently changes the movement
+direction of the vehicle to avoid collisions without any
+human intervention.
+
 </p>
 
 </section>
 
 
 
+<!-- HARDWARE -->
 
 <section id="hardware">
 
 <h2>HARDWARE COMPONENTS</h2>
 
-
 <div class="cards">
-
 
 <div class="card">
 <h3>Arduino UNO</h3>
 <p>Main controller of the robot.</p>
 </div>
 
-
 <div class="card">
-<h3>HC-SR04</h3>
-<p>Ultrasonic sensor for obstacle detection.</p>
+<h3>HC-SR04 Sensor</h3>
+<p>Measures distance to nearby obstacles.</p>
 </div>
-
 
 <div class="card">
 <h3>Servo Motor</h3>
-<p>Rotates sensor for scanning.</p>
+<p>Rotates the ultrasonic sensor for scanning.</p>
 </div>
-
 
 <div class="card">
-<h3>L298N Driver</h3>
-<p>Controls DC motors.</p>
+<h3>L298N Motor Driver</h3>
+<p>Controls the DC motors.</p>
 </div>
-
 
 <div class="card">
 <h3>DC Motors</h3>
-<p>Provides robot movement.</p>
+<p>Provides forward and reverse movement.</p>
 </div>
-
 
 </div>
 
@@ -131,12 +137,11 @@ changes its direction to avoid collisions.
 
 
 
-
+<!-- WORKING -->
 
 <section id="working">
 
 <h2>WORKING PRINCIPLE</h2>
-
 
 <div class="sensor">
 
@@ -152,108 +157,102 @@ changes its direction to avoid collisions.
 
 </div>
 
-
 <p>
 
-The ultrasonic sensor continuously measures the distance
-between the robot and nearby objects.
-When an obstacle is detected, Arduino processes the data
-and changes motor direction automatically.
+The ultrasonic sensor continuously emits ultrasonic waves and
+calculates the distance by measuring the echo time.
+
+If an obstacle is detected within the predefined threshold,
+the Arduino immediately stops the vehicle, scans both sides
+using the Servo Motor, compares the available paths, and
+moves in the safest direction automatically.
 
 </p>
 
-
 </section>
 
 
 
+<!-- CIRCUIT -->
 
-
-
-<section>
+<section id="circuit">
 
 <h2>CIRCUIT DESIGN</h2>
 
-
 <div class="images">
 
+<img src="Images/Circuit_Diagram.png"
+alt="Circuit Diagram">
 
-<img src="assets/Circuit_Diagram.png">
-
-<img src="assets/Schematic.png">
+<img src="Images/Schematic.png"
+alt="Circuit Schematic">
 
 </div>
-
 
 </section>
 
 
 
-
+<!-- GALLERY -->
 
 <section id="gallery">
 
 <h2>PROJECT GALLERY</h2>
 
-
 <div class="images">
 
-
-<img src="assets/Obstacle_Avoiding_Car.png">
-
+<img src="Images/Obstacle_Avoiding_Car.png"
+alt="Obstacle Avoiding Car">
 
 </div>
-
 
 </section>
 
 
 
-
-
+<!-- STATUS -->
 
 <section class="status">
 
 <h2>SYSTEM STATUS</h2>
 
+<p>🟢 Power Supply : ONLINE</p>
 
-<p>
-🟢 POWER ONLINE
-</p>
+<p>🟢 Ultrasonic Sensor : ACTIVE</p>
 
-<p>
-🟢 SENSOR ACTIVE
-</p>
+<p>🟢 Servo Motor : ACTIVE</p>
 
-<p>
-🟢 AUTONOMOUS MODE ENABLED
-</p>
+<p>🟢 Motor Driver : READY</p>
 
+<p>🟢 Autonomous Navigation : ENABLED</p>
 
 </section>
 
 
 
-
+<!-- FOOTER -->
 
 <footer>
 
 <p>
-© 2026 Arduino Robotics Project
+
+© 2026 Obstacle Avoiding Car Project
+<br>
+Developed using Arduino UNO
+
 </p>
 
+<a href="https://github.com/venkateshpachipala5059"
+target="_blank">
 
-<a href="https://github.com/venkateshpachipala5059">
-GitHub Profile
+Visit GitHub Profile
+
 </a>
-
 
 </footer>
 
 
-
 <script src="script.js"></script>
-
 
 </body>
 
