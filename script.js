@@ -1,0 +1,36 @@
+window.onload=function(){
+
+console.log(
+"🤖 Arduino Robotics System Online"
+);
+
+
+const cards=document.querySelectorAll(".card");
+
+
+cards.forEach(card=>{
+
+
+card.addEventListener(
+"mouseenter",
+()=>{
+
+card.style.boxShadow=
+"0 0 20px #00eaff";
+
+});
+
+
+card.addEventListener(
+"mouseleave",
+()=>{
+
+card.style.boxShadow="none";
+
+});
+
+
+});
+
+
+};
